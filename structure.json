@@ -1,0 +1,27 @@
+// she had had to address problems
+
+{
+  "value": 6,
+  "children": [
+    { "value": 2, "text": "had" },
+    {
+      "value": 4,
+      "children": [
+        {
+          "value": 2,
+          "children": [
+            { "value": 1, "text": "to" },
+            { "value": 1, "text": "problems" }
+          ]
+        },
+        {
+          "value": 2,
+          "children": [
+            { "value": 1, "text": "address" },
+            { "value": 1, "text": "she" }
+          ]
+        }
+      ]
+    }
+  ]
+}

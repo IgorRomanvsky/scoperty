@@ -1,0 +1,5 @@
+<label for="avatar">Or upload a text file:</label>
+
+<input (change)="handleFileInput($event.target.files)" type="file"
+       id="avatar" name="avatar"
+       accept="txt">

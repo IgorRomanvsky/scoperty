@@ -1,0 +1,10 @@
+.action-menu {
+    height: 60px;
+    width: 100%;
+    background-color: rgb(226, 225, 225);
+    display: flex;
+
+    & > * {
+        margin: 10px;
+    }
+}
