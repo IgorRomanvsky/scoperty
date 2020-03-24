@@ -1,0 +1,14 @@
+<div class="boxes-container">
+    <div class="box">
+        <h3>Original input:</h3><br>
+        {{originalInput}}
+    </div>
+    <div class="box">
+        <h3>Result:</h3><br>
+        <div *ngFor="let row of matrix">
+            <span *ngFor="let column of row">
+                {{column}},
+            </span>
+        </div>
+    </div>
+</div>

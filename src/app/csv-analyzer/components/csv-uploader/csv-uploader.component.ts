@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CsvService } from '../../services/csv.service';
 
 @Component({
   selector: 'app-csv-uploader',
@@ -7,18 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CsvUploaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private csvService: CsvService) { }
 
   ngOnInit() {
   }
 
-  public handleFileInput(files: FileList) {
+  public handleFileInput(files: FileList): void {
     const file = files.item(0);
     this.extractTextFromFile(file);
   }
 
-  private async extractTextFromFile(file: any) {
-    const text = await file.text();
+  private async extractTextFromFile(file: any): Promise<void> {
+    const data = await file.text();
+    this.csvService.setMatrixFromCsvFleText(data);
   }
 }
 

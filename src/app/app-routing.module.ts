@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'tree',
+    path: '',
     loadChildren: () => import('./node-tree/node-tree.module').then(m => m.NodeTreeModule)
   },
   {
